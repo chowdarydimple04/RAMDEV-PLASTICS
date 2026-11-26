@@ -1,0 +1,228 @@
+
+/* RAMDEV PLASTICS - ELEGANT THEME */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: #F8F6F0;
+    color: #45483F;
+    line-height: 1.8;
+}
+
+/* HEADER */
+
+header {
+    background: #F8F6F0;
+    color: #34483D;
+    text-align: center;
+    padding: 35px 15px;
+    border-bottom: 1px solid #E5DFD2;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 43px;
+    letter-spacing: 1px;
+}
+
+header p {
+    color: #887A64;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+/* NAVIGATION */
+
+nav {
+    background: #34483D;
+    text-align: center;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: #F8F6F0;
+    text-decoration: none;
+    margin: 0 17px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #D5B98C;
+}
+
+/* HERO */
+
+.hero {
+    background: linear-gradient(
+        rgba(39, 57, 47, 0.78),
+        rgba(39, 57, 47, 0.78)
+    ),
+    url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=85');
+
+    background-size: cover;
+    background-position: center;
+    min-height: 470px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+    color: white;
+}
+
+.hero h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 44px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 17px;
+    margin-bottom: 28px;
+    color: #F1EBDD;
+}
+
+/* BUTTONS */
+
+.btn {
+    display: inline-block;
+    background: #B28B5E;
+    color: white;
+    padding: 12px 27px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #8C6D48;
+    transform: translateY(-3px);
+}
+
+/* SECTIONS */
+
+section {
+    padding: 75px 8%;
+    text-align: center;
+}
+
+section h2 {
+    font-family: 'Playfair Display', serif;
+    color: #34483D;
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+
+/* PRODUCTS */
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(220px, 1fr)
+    );
+    gap: 24px;
+}
+
+.product {
+    background: #FFFFFF;
+    padding: 35px 22px;
+    border: 1px solid #E8E1D5;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px #34483D15;
+}
+
+.product h3 {
+    font-family: 'Playfair Display', serif;
+    color: #526B58;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+/* ABOUT */
+
+#about {
+    background: #EDE9DF;
+}
+
+#about p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 16px;
+}
+
+/* REVIEWS */
+
+#reviews {
+    background: #F8F6F0;
+}
+
+/* CONTACT */
+
+#contact {
+    background: #E5E9E0;
+}
+
+#contact p {
+    margin: 10px;
+}
+
+/* FOOTER */
+
+footer {
+    background: #34483D;
+    color: #F8F6F0;
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+}
+
+/* MOBILE DESIGN */
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 32px;
+    }
+
+    .hero {
+        min-height: 380px;
+    }
+
+    .hero h2 {
+        font-size: 31px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+        font-size: 13px;
+    }
+
+    section {
+        padding: 50px 5%;
+    }
+
+    section h2 {
+        font-size: 28px;
+    }
+}
